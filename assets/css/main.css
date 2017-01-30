@@ -1,0 +1,67 @@
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJtYWluLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiIl0sImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
+
+/* Main Page Styles */
+
+body {
+  background: url('../../resources/graphics/background.png');
+  font-family: sans-serif; 
+}
+
+.container {
+  width: 75%;
+  margin: 10vh auto;
+}
+
+.row {
+  border: 1px solid #EAEAEA;
+  background-color: #FFFFFF;
+}
+
+/* Search Bar Styles */
+
+#search-bar {
+  background-color: #1C688E;
+  width: 100%;
+  padding: 1% 0%;
+}
+
+#search-bar input {
+  border-radius: 2px;
+  border: none;
+  width: 90%;
+  height: 2em;
+  margin: 2% 5%;
+  padding-left: 2%
+}
+
+/* Side Bar Styles */
+
+#side-bar {
+  border-right: 1px solid #EAEAEA;
+  display: inline-block;
+  width: 30%;
+}
+
+.side-bar-block {
+  display: block;
+  padding: 10% 10% 0% 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.side-bar-content {
+  padding-left: 5%;
+  font-size: 0.9em;
+}
+
+.side-bar-data {
+  padding-top: 1%;
+}
+
+/* Main Content Styles */
+
+#main-content {
+  display: inline-block;
+  width: 69%;
+}
