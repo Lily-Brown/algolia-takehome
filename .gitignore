@@ -1,2 +1,4 @@
 node_modules
 **/*.DS_Store
+assets/css/main.css.map
+assets/css/normalize.css
