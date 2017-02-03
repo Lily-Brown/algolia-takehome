@@ -35,7 +35,7 @@ body {
 
 /* Side Bar Styles */
 
-#side-bar {
+#left-column {
   display: inline-block;
   width: 25%;
   vertical-align: top;
@@ -48,32 +48,23 @@ body {
   margin: 0 auto;
 }
 
-.side-bar-content {
-  padding-left: 5%;
-  font-size: 0.9em;
-}
-
-.side-bar-data {
-  padding-top: 1%;
-}
-
 /* Main Content Styles */
 
-#main-content {
+#right-column {
   border-left: 1px solid #EAEAEA;
   display: inline-block;
   width: 69%;
   vertical-align: top;
 }
 
-#results-info span:after {
+#stats span:after {
   content: " ";
   border-bottom: 1px solid #EAEAEA;
   display: table-cell;
-  width: 250px;
+  width: 300px;
 }
 
-#results-info, .results-div{
+#stats, .results-div{
   position:relative;
   padding-left: 5%;
   padding-top: 5%;

@@ -6,121 +6,68 @@
     <title>Cool places to eat!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
 
   <div class="container">
 
-    <div id="search-bar">
-      <input type="text" placeholder="Search for Restaurants by Name, Cuisine, Location">
-    </div>
-
+    <header id="search-bar">
+      <div id="search-input"></div>
+      <div id="search-input-icon"></div>
+    </header>
+    
+    <main>
     <div class="row">
 
-      <div id="side-bar">
-        <div class="side-bar-block">
-          <span class="side-bar-heading">Something Here</span>
-          <div class="side-bar-content">
-            <p>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-            </p>
-          </div>
-        </div>
-        <div class="side-bar-block">
-          <span class="side-bar-heading">Something Here</span>
-          <div class="side-bar-content">
-            <p>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-            </p>
-          </div>
-        </div>
-        <div class="side-bar-block">
-          <span class="side-bar-heading">Something Here</span>
-          <div class="side-bar-content">
-            <p>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-              <div class="side-bar-data">SIDE BAR CONTENT</div>
-            </p>
-          </div>
-        </div>
+      <div id="left-column">
+        <div class="side-bar-block" id="food_type" class="facet"></div>
+        <div class="side-bar-block" id="stars_count" class="facet"></div>
       </div>
 
-      <div id="main-content">
-
-        <div id="results-info">
-          <span>
-            <strong>34 results found</strong> in 0.0002 seconds
-          </span>
-        </div>
-
-        <div class="results-div">
-          <div class="result-img">
-            <img src="http://artexpresstravel.com/wordpress/wp-content/uploads/2010/04/anchorandhope1.jpg">
-          </div>
-          <div class="result-info">
-            <div class="result-heading">
-              Anchor and Hope
-            </div>
-            <div class="result-rating">
-              <span class="rating">4.2 &#9733; &#9733; &#9733; &#9733;</span> &#9734; (1897 reviews)
-            </div>
-            <div class="result-description">
-              American & Seafood | SOMA | $31 to $50
-            </div>
-          </div>
-        </div>
-
-        <div class="results-div">
-          <div class="result-img">
-            <img src="http://www.bluestembrasserie.com/images_homepage/4.jpg">
-          </div>
-          <div class="result-info">
-            <div class="result-heading">
-              Bluestem Brasserie
-            </div>
-            <div class="result-rating">
-              <span class="rating">4.1 &#9733; &#9733; &#9733; &#9733;</span> &#9734; (1897 reviews)
-            </div>
-            <div class="result-description">
-              American | Downtown / Union Square | $31 to $50
-            </div>
-          </div>
-        </div>
-
-        <div class="results-div">
-          <div class="result-img">
-            <img src="https://pbs.twimg.com/profile_images/619502439994036224/HEaW7V74.jpg">
-          </div>
-          <div class="result-info">
-            <div class="result-heading">
-              Boulevard
-            </div>
-            <div class="result-rating">
-              <span class="rating">4.2 &#9733; &#9733; &#9733;</span> &#9734; &#9734; (1897 reviews)
-            </div>
-            <div class="result-description">
-              American | Financial District / Embarcadero | $31 to $50
-            </div>
-          </div>
-        </div>
-
+      <div id="right-column">
+        <div id="sort-by-wrapper"><span id="sort-by"></span></div>
+        <div id="stats"></div>
+        <div id="hits"></div>
+        <div id="pagination"></div>
       </div>
+
+      <script type="text/html" id="hit-template">
+        <div class="hit results-div">
+          <div class="hit-image result-img">
+            <img src="{{image}}">
+          </div>
+          <div class="hit-content result-info">
+            <div class="hit-name result-heading">
+              {{name}}
+            </div>
+            <div class="hit-rating result-rating">
+              <span class="rating">{{stars_count}} &#9733; &#9733; &#9733; &#9733;</span> &#9734; ({{reviews_count}} reviews)
+            </div>
+            <div class="hit-price result-description">
+              {{food_type}} | {{neighborhood}} | {{price_range}}
+            </div>
+          </div>
+        </div>
+      </script>
+
+      <script type="text/html" id="no-results-template">
+        <div id="no-results-message">
+          <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+          <a href="." class="clear-all">Clear search</a>
+        </div>
+      </script>
 
     </div>
+    </main>
 
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="https://cdn.jsdelivr.net/g/algoliasearch@3(algoliasearchLite.min.js),algoliasearch.helper@2"></script>
+  <script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
   <script src="assets/js/main.js"></script>
   </body>
 </html>
