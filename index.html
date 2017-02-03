@@ -13,7 +13,8 @@
   <div class="container">
 
     <div id="search-bar">
-      <input type="text" placeholder="Search for Restaurants by Name, Cuisine, Location">
+      <input type="text" placeholder="Search for Restaurants by Name, Cuisine, Location"
+        autocomplete="off" id="search-box" />
     </div>
 
     <div class="row">
@@ -62,7 +63,7 @@
           </span>
         </div>
 
-        <div class="results-div">
+<!--         <div class="results-div">
           <div class="result-img">
             <img src="http://artexpresstravel.com/wordpress/wp-content/uploads/2010/04/anchorandhope1.jpg">
           </div>
@@ -111,7 +112,9 @@
               American | Financial District / Embarcadero | $31 to $50
             </div>
           </div>
-        </div>
+        </div> -->
+
+        <ul id="container"></ul>
 
       </div>
 
@@ -121,6 +124,8 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <!-- <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/g/algoliasearch@3(algoliasearchLite.min.js),algoliasearch.helper@2"></script>
   <script src="assets/js/main.js"></script>
   </body>
 </html>
