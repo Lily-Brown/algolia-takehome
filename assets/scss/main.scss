@@ -89,6 +89,7 @@ body {
   display: inline-block;
   width: 69%;
   vertical-align: top;
+  padding-bottom: 5%;
 }
 
 #stats span:after {
@@ -135,4 +136,8 @@ body {
 
 .result-rating span {
   color: #FFAB66;
+}
+
+#no-results-message {
+  padding: 10%;
 }
