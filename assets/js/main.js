@@ -52,14 +52,13 @@ $(function () {
       container: '#stars_count',
       attributeName: 'stars_count',
       max: 5,
-      labels: {
-        andUp: '& Up'
-      },
+      labels: {},
       templates: {
         header: '<span class="side-bar-heading">Rating</span>'
       }
     })
   );
+
 
   search.start();
 });
