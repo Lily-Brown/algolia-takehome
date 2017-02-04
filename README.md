@@ -143,7 +143,7 @@ The responses to the Customer Questions included in the Solutions Assignment can
 
 ## Future Work
 
-Algolia has an amazing search API honestly impresses me with its speed and responsiveness. I would be interested in the future to learn more about:
+Algolia has an amazing search API that honestly impresses me with its speed and responsiveness. I would be interested in the future to learn more about:
 
 - Customizing widgets for InstantSearch
 - Undersetanding what exactly is going on behind the scenes of InstantSearch
