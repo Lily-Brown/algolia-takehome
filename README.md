@@ -16,11 +16,11 @@ This repository is the WIP for the Algolia Take-Home Assignment detailed here: [
 
 **Produce the HTML markup and CSS needed to reproduce the UI provided by the client. To do so, you can write vanilla CSS or with a processor of your choice. We've provided configs for Sass and LESS**
 
-- _Status:_ I have commited and pulled in a branch called 'basic-layout' with CSS configurations in my repo here: [Lily-Brown-algolia-takehome](https://github.com/Lily-Brown/algolia-takehome) You can also see below (in [Chanllenges](## Challenges), the front-end changes I have made to the application.
+- _Status:_ I have commited and pulled in a branch called 'basic-layout' with CSS configurations in my repo here: [Lily-Brown-algolia-takehome](https://github.com/Lily-Brown/algolia-takehome) You can also see below (in [Chanllenges](https://github.com/Lily-Brown/algolia-takehome#challenges), the front-end changes I have made to the application.
 
 **Using the Algolia JS Helper, implement an as-you-type search experience that enables users to easily find restaurants: both by passing a search query and/or filtering on the “type of cuisine”**
 
-- _Status:_ See [Challenges](## Challenges) for the various attempts made at implementing algolia's instantaneous search to filter results.
+- _Status:_ See [Challenges](https://github.com/Lily-Brown/algolia-takehome#challenges) for the various attempts made at implementing algolia's instantaneous search to filter results.
 
 **Leverage the user’s location to show restaurants closer to them higher in the results—with a fallback if they dont’t allow for geolocation permissions in the browser**
 
