@@ -72,6 +72,8 @@ See video:
 
 [![InstantSearch](http://i.imgur.com/PY4yDmL.png)](https://www.dropbox.com/home/Public?preview=InstantSearch.mov "Click to Watch!")
 
+https://dl.dropboxusercontent.com/u/14211788/InstantSearch.mov
+
 ### AlgoliaHelper Method 
 _See: [Pull WIP Branch: algolia](https://github.com/Lily-Brown/algolia-takehome/compare/algolia?expand=1) on Github for code_
 
@@ -132,6 +134,8 @@ return "<div class='results-div'>" +
 See video:
 
 [![AlgoliaHelper](http://i.imgur.com/wHaEeb9.png)](https://www.dropbox.com/home/Public?preview=AlgoliaSearchHelper.mov "Click to Watch!")
+
+https://dl.dropboxusercontent.com/u/14211788/AlgoliaSearchHelper.mov
 
 ## Future Work
 
