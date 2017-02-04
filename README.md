@@ -137,6 +137,10 @@ See video:
 
 https://dl.dropboxusercontent.com/u/14211788/AlgoliaSearchHelper.mov
 
+## Customer Questions
+
+The responses to the Customer Questions included in the Solutions Assignment can be found here: https://github.com/Lily-Brown/algolia-takehome/blob/master/customer-questions.md
+
 ## Future Work
 
 Algolia has an amazing search API honestly impresses me with its speed and responsiveness. I would be interested in the future to learn more about:
