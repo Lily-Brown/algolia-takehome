@@ -1,7 +1,6 @@
 $(function () {
   console.log('Page loaded');
 
-  //Config
   var applicationID = 'VDT23XTJX8';
   var apiKey = '69344a2c6049b250105c46d2893a7c7d';
   var index = 'restaurants';
@@ -11,7 +10,7 @@ $(function () {
   var helper = algoliasearchHelper(client, index);
   var info_helper = algoliasearchHelper(client, info);
   
-  helper.setQueryParameter('hitsPerPage', 10);
+  helper.setQueryParameter('hitsPerPage', 4);
 
   helper.on('result', function(content) {
     content.hits.forEach(function(val,index) {
@@ -24,18 +23,16 @@ $(function () {
         val.food_type = tempHit.food_type;
         val.stars_count = tempHit.stars_count;
         val.price_range = tempHit.price_range;
-        val.dining_style = tempHit.dining_style;
+        val.reviews_count = tempHit.reviews_count;
       });
     })
-    console.log("content:",content);
     renderHits(content);
   });
 
   function renderHits(content) {
     $('#container').html(function() {
       return $.map(content.hits, function(hit) {
-        console.log('hit',hit.food_type);
-        output = hit.food_type
+        output = hit;
         return "<div class='results-div'>" +
                   "<div class='result-img'>" +
                     "<img src='" + hit.image_url + "'>" +
@@ -47,11 +44,13 @@ $(function () {
                       // "RESTAURANT NAME" +
                     "</div>" +
                     "<div class='result-rating'>" +
-                      // "<span class='rating'>4.1 &#9733; &#9733; &#9733; &#9733;</span> &#9734; (1897 reviews)" +
-                      "<span class='rating'>" + hit._highlightResult.food_type + " &#9733; &#9733; &#9733; &#9733;</span> &#9734; (1897 reviews)" +                      
+                      "<span class='rating'>" + hit.stars_count + " &#9733; &#9733; &#9733; &#9733;</span> &#9734; (" + 
+                        hit.reviews_count + " reviews)" +
+                      // "<span class='rating'>" + hit._highlightResult.food_type + " &#9733; &#9733; &#9733; &#9733;</span> &#9734; (1897 reviews)" +                      
                     "</div>" +
                     "<div class='result-description'>" +
-                      "American | Downtown / Union Square | $31 to $50" +
+                      // "American | Downtown / Union Square | $31 to $50" +
+                      hit.food_type + " | " + hit.neighborhood + " | " + hit.price_range + 
                     "</div>" +
                   "</div>" +
                 "</div>";
