@@ -32,7 +32,7 @@ Let me know if you have any questions about that process.
 
 2) What metrics are useful to include in "Custom Ranking"?
 
-Custom Ranking allow you to control what record results are favored when your search results are displayed. Depending on the data you are searching through, Popularity is a handy metric to prioritize. 
+Custom Ranking allows you to control what record results are favored when your search results are displayed. Depending on the data you are searching through, Popularity is a handy metric to prioritize. 
 
 If you add Popularity to you Custom Ranking Attributes (You can customize/add these from the Ranking tab on your Index view in your Dashboard), not only will relevant data be displayed when the user types/searches, but the data with the highest Popularity value will filter to the top.
 
@@ -59,7 +59,7 @@ Matt,
 
 Thanks for your feedback. It is unforunate that our new design has caused you hiccups in your normal flow through our application. 
 
-One thing to note about our redesign is that you are now able to view all indexes at the same time and make management decisions with a the full scope of your data visualized.*
+One thing to note about our redesign is that you are now able to view all indexes at the same time and make management decisions with the full scope of your data visualized.*
 
 In terms of making your experience better, what kind of flow would be ideal for you? We are constantly improving and updating the dashboard and are excited to take your feedback and hopefully integrate it into future features?
 
@@ -88,6 +88,8 @@ Regards, Leo
 Leo,
 
 Thanks for your interest in Algolia. 
+
+At a high level, we would need to import your data, decide what information is useful/important for you to display and search on, customize your indexes to reflect those needs and then work with your front end to display the results in real-time.
 
 We actually pride ourselves on how easy it is to integrate our search into your website, so I would be happy to sit down with you and better understand what aspects of Algolia you would like to add, utilize and take advantage of. In order to understand the complexity of the integration, we need to know not only what we're currently working with, but what our ultimate goal is for the project.
 
