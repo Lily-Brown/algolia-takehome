@@ -17,7 +17,7 @@
       <div id="search-input"></div>
       <div id="search-input-icon"></div>
     </header>
-    
+
     <main>
     <div class="row">
 
@@ -30,17 +30,23 @@
         <div id="sort-by-wrapper"><span id="sort-by"></span></div>
         <div id="stats"></div>
         <div id="hits"></div>
+        <div>
+          <ul id="container">
+          </ul>
+        </div>
         <div id="pagination"></div>
       </div>
 
       <script type="text/html" id="hit-template">
         <div class="hit results-div">
           <div class="hit-image result-img">
-            <img src="{{image}}">
+            <!-- <img src="{{image}}"> -->
+            <img src='http://www.bluestembrasserie.com/images_homepage/4.jpg'>
           </div>
           <div class="hit-content result-info">
             <div class="hit-name result-heading">
-              {{name}}
+              <!-- {{name}} -->
+              Restaurant Name
             </div>
             <div class="hit-rating result-rating">
               <span class="rating">{{stars_count}} &#9733; &#9733; &#9733; &#9733;</span> &#9734; ({{reviews_count}} reviews)

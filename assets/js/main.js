@@ -14,7 +14,7 @@ $(function () {
   search.addWidget(
     instantsearch.widgets.searchBox({
       container: '#search-input',
-      placeholder: 'Search for Restaurants by Name, Cuisine, Location'
+      placeholder: 'Search for Restaurants by ObjectID 😖🤷‍'
     })
   );
 
@@ -58,7 +58,6 @@ $(function () {
       }
     })
   );
-
 
   search.start();
 });
