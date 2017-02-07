@@ -7,14 +7,14 @@ $(function () {
   var search = instantsearch({
     appId: 'VDT23XTJX8',
     apiKey: '69344a2c6049b250105c46d2893a7c7d',
-    indexName: 'restaurant_info',
+    indexName: 'restaurants_combined',
     urlSync: true
   });
 
   search.addWidget(
     instantsearch.widgets.searchBox({
       container: '#search-input',
-      placeholder: 'Search for Restaurants by ObjectID 😖🤷‍'
+      placeholder: 'Search for Restaurants by Name, Location or Cuisine'
     })
   );
 
