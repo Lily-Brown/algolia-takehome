@@ -61,5 +61,13 @@ $(function () {
     })
   );
 
+  search.addWidget(
+    instantsearch.widgets.pagination({
+      container: '#pagination',
+      maxPages: 20,
+      scrollTo: false
+    })
+  );
+
   search.start();
 });
