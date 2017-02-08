@@ -25,6 +25,17 @@ $(function () {
       templates: {
         item: getTemplate('hit'),
         empty: getTemplate('no-results')
+      },
+      transformData: function (hit) {
+        var stars = ""
+        for(var i=0; i<hit.rating; i++) {
+          stars += "★ "
+        }
+        for(var i=0; i<(5-hit.rating); i++) {
+          stars += "☆ "
+        }
+        hit.stars = stars += "";
+        return hit;
       }
     })
   );
