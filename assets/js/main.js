@@ -71,3 +71,8 @@ $(function () {
 
   search.start();
 });
+
+function showMore() {
+  $('#pagination').removeClass("hidden");
+  $('#show-pagination').addClass("hidden");
+}
