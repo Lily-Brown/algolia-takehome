@@ -61,13 +61,15 @@ body {
   padding: 5%;
 }
 
-.ais-star-rating--item:hover, .ais-menu--item:hover,
 .ais-star-rating--item__active, .ais-menu--item__active,
-.ais-star-rating--item--label, .ais-menu--item--label  {
+.ais-star-rating--item__active a, .ais-menu--item__active a,
+.ais-star-rating--item__active span, .ais-menu--item__active span,
+.ais-star-rating--item:hover, .ais-menu--item:hover {
   background-color: #2897C5;
-  color: #FFFFFF !important;
   border-radius: 2px;
+  color: #FFFFFF !important;
 }
+
 
 .ais-star-rating--item, .ais-menu--item {
   padding: 5px;
