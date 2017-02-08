@@ -16,6 +16,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Search Bar Styles */
 
 #search-bar {
@@ -140,4 +144,39 @@ body {
 
 #no-results-message {
   padding: 10%;
+}
+
+/* Pagination Styles */
+
+#pagination, #show-pagination {
+  text-align: center;
+}
+
+#show-pagination button {
+  background-color: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  border-radius: 2px;
+  color: #C0C0C0;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 50px 10px 50px;
+}
+
+.ais-pagination--link {
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.ais-pagination a {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+.ais-pagination--link:hover {
+  background-color: #C0C0C0;
+  color: #FFFFFF;
+}
+
+.ais-pagination--item.ais-pagination--item__page.ais-pagination--item__active {
+  font-weight: bold;
 }
