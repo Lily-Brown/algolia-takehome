@@ -25,6 +25,17 @@ $(function () {
       templates: {
         item: getTemplate('hit'),
         empty: getTemplate('no-results')
+      },
+      transformData: function (hit) {
+        var stars = "";
+        for(var i=0; i<hit.rating; i++) {
+          stars += "★ "
+        }
+        for(var i=0; i<(5-hit.rating); i++) {
+          stars += "☆ "
+        }
+        hit.stars = stars += "";
+        return hit;
       }
     })
   );
@@ -47,16 +58,45 @@ $(function () {
     })
   );
 
+  // search.addWidget(
+  //   instantsearch.widgets.starRating({
+  //     container: '#rating',
+  //     attributeName: 'rating',
+  //     max: 5,
+  //     labels: {
+  //       andUp: '& Up'
+  //     },
+  //     templates: {
+  //       header: '<span class="side-bar-heading">Rating</span>'
+  //     }
+  //   })
+  // );
+
   search.addWidget(
-    instantsearch.widgets.starRating({
+    instantsearch.widgets.menu({
       container: '#rating',
       attributeName: 'rating',
-      max: 5,
-      labels: {
-        andUp: '& Up'
-      },
+      limit: 5,
+      sortBy: ['rating:desc'],
       templates: {
         header: '<span class="side-bar-heading">Rating</span>'
+      },
+      transformData: {
+        item: function (item) {
+          var rating = parseInt(item.name);
+          var stars = "";
+          for(var i=0; i<rating; i++) {
+            stars += "★ "
+          }
+          for(var i=0; i<(5-rating); i++) {
+            stars += "☆ "
+          }
+          item.name = stars += "";
+          return item;
+        }
+      },
+      cssClasses: {
+        item: 'rating-facet'
       }
     })
   );
