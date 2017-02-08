@@ -21,7 +21,7 @@ $(function () {
   search.addWidget(
     instantsearch.widgets.hits({
       container: '#hits',
-      hitsPerPage: 10,
+      hitsPerPage: 3,
       templates: {
         item: getTemplate('hit'),
         empty: getTemplate('no-results')
@@ -49,10 +49,12 @@ $(function () {
 
   search.addWidget(
     instantsearch.widgets.starRating({
-      container: '#stars_count',
-      attributeName: 'stars_count',
+      container: '#rating',
+      attributeName: 'rating',
       max: 5,
-      labels: {},
+      labels: {
+        andUp: '& Up'
+      },
       templates: {
         header: '<span class="side-bar-heading">Rating</span>'
       }
