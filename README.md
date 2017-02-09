@@ -20,7 +20,7 @@ This repository is the WIP for the Algolia Take-Home Assignment detailed here: [
 
 **Using the Algolia JS Helper, implement an as-you-type search experience that enables users to easily find restaurants: both by passing a search query and/or filtering on the “type of cuisine”**
 
-- _Status:_ Completed. See [Approach](https://github.com/Lily-Brown/algolia-takehome#Approach) for my method to create this integration.
+- _Status:_ Completed. See [Approach](https://github.com/Lily-Brown/algolia-takehome##Approach) for my method to create this integration.
 
 **Leverage the user’s location to show restaurants closer to them higher in the results—with a fallback if they dont’t allow for geolocation permissions in the browser**
 
@@ -28,9 +28,9 @@ This repository is the WIP for the Algolia Take-Home Assignment detailed here: [
 
 ## Approach
 
-See: [Project-Challenges](#) to see my First Iteration Challenges in trying to combine two indices. 
+See: [Project-Challenges](https://github.com/Lily-Brown/algolia-takehome/blob/master/Project-Challenges.md) to see my First Iteration Challenges in trying to combine two indices. 
 
-In this Iteration, I ended up writing a custom script ([combine.js](#)) that took in both the csv and json files provided and returned one json with the relavent data to search on, display, and facet.
+In this Iteration, I ended up writing a custom script ([combine.js](https://github.com/Lily-Brown/algolia-takehome/blob/master/combine.js)) that took in both the csv and json files provided and returned one json with the relavent data to search on, display, and facet.
 
 ### Faceting: Rating
 
