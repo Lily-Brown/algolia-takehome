@@ -26,6 +26,23 @@ This repository is the WIP for the Algolia Take-Home Assignment detailed here: [
 
 - _Status:_ Completed. Added 'aroundLatLngViaIP: true' to SearchParameters. 
 
+
+## Installation
+
+I have already used lily-brown.github.io for other purposes but if you want to interact with this project, follow the below instructions:
+
+1 - Fork and clone this repository.
+
+2 - CD into the project directory: ```> cd algolia-takehome```
+
+3 - Install Node Packages: ```> npm install```
+
+4 - Apply SASS: ```> gulp sass```
+
+5 - Run the server: ```> gulp```
+
+6 - Gulp should launch the app at: http://localhost:3000/.
+
 ## Approach
 
 See: [Project-Challenges](https://github.com/Lily-Brown/algolia-takehome/blob/master/Project-Challenges.md) to see my First Iteration Challenges in trying to combine two indices. 
