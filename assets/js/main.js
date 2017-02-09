@@ -21,7 +21,7 @@ $(function () {
   search.addWidget(
     instantsearch.widgets.hits({
       container: '#hits',
-      hitsPerPage: 3,
+      hitsPerPage: 4,
       templates: {
         item: getTemplate('hit'),
         empty: getTemplate('no-results')
@@ -58,20 +58,6 @@ $(function () {
     })
   );
 
-  // search.addWidget(
-  //   instantsearch.widgets.starRating({
-  //     container: '#rating',
-  //     attributeName: 'rating',
-  //     max: 5,
-  //     labels: {
-  //       andUp: '& Up'
-  //     },
-  //     templates: {
-  //       header: '<span class="side-bar-heading">Rating</span>'
-  //     }
-  //   })
-  // );
-
   search.addWidget(
     instantsearch.widgets.menu({
       container: '#rating',
@@ -97,6 +83,18 @@ $(function () {
       },
       cssClasses: {
         item: 'rating-facet'
+      }
+    })
+  );
+
+  search.addWidget(
+    instantsearch.widgets.menu({
+      container: '#payment_options',
+      attributeName: 'payment_options',
+      limit: 10,
+      operator: 'or',
+      templates: {
+        header: '<span class="side-bar-heading">Payment Options</span>'
       }
     })
   );

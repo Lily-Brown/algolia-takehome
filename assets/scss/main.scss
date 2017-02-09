@@ -43,11 +43,12 @@ body {
   display: inline-block;
   width: 27%;
   vertical-align: top;
+  border-right: 1px solid #EAEAEA;
 }
 
 .side-bar-block {
   display: block;
-  padding: 10% 10% 0% 10%;
+  padding: 5% 5% 0% 5%;
   width: 80%;
   margin: 0 auto;
 }
@@ -95,7 +96,6 @@ body {
 /* Main Content Styles */
 
 #right-column {
-  border-left: 1px solid #EAEAEA;
   display: inline-block;
   width: 70%;
   vertical-align: top;
