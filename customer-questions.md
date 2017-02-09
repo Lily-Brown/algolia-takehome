@@ -14,7 +14,7 @@ Cheers, George
 
 George,
 
-Thanks for your inquiry. I would love to help you out with some of your inital questions.
+Thanks for your inquiry. I would love to help you out with some of your initial questions.
 
 1) What is Records Indexing?
 
@@ -57,11 +57,11 @@ Regards, Matt
 
 Matt,
 
-Thanks for your feedback. It is unforunate that our new design has caused you hiccups in your normal flow through our application. 
+Thanks for your feedback. It is unfortunate that our new design has caused you hiccups in your normal flow through our application. 
 
 One thing to note about our redesign is that you are now able to view all indexes at the same time and make management decisions with the full scope of your data visualized.*
 
-In terms of making your experience better, what kind of flow would be ideal for you? We are constantly improving and updating the dashboard and are excited to take your feedback and hopefully integrate it into future features?
+In terms of making your experience better, what kind of flow would be ideal for you? We are constantly improving and updating the dashboard and are excited to take your feedback and hopefully integrate it into future features.
 
 Perhaps a 'Quick Delete' button from the Index tab?*
 
