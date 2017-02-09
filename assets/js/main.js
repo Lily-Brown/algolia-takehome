@@ -8,6 +8,7 @@ $(function () {
     appId: 'VDT23XTJX8',
     apiKey: '69344a2c6049b250105c46d2893a7c7d',
     indexName: 'restaurants_combined',
+    aroundLatLngViaIP: true,
     urlSync: true
   });
 
