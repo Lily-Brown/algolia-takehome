@@ -96,6 +96,12 @@ line.payment_options = mapPayments.filter(function(elem, index, self) {
 })
 ```
 
+## UI Screenshot
+
+Screenshot of searching by neighborhood ("SOMA") and filtering by food_type ("Italian") and rating (three stars):
+
+![UI](http://i.imgur.com/ZaUskNL.png)
+
 ## Customer Questions
 
 The responses to the Customer Questions included in the Solutions Assignment can be found here: https://github.com/Lily-Brown/algolia-takehome/blob/master/customer-questions.md
